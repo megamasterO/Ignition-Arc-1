@@ -1,0 +1,101 @@
+html,
+body {
+    padding: 0px;
+    margin: 0px;
+    /* remove this later */
+    background: #cecece;
+}
+
+canvas {
+    padding: 0px;
+    margin: 0px;
+    background: #fff;
+}
+
+.gif-wrapper {
+    /*need to set gif-wrapper div to 100% width and height*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 854px;
+    height: 480px;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    z-index: 1002;
+    transition: opacity 0.3s, visibility 0.3s;
+
+}
+
+
+
+.gif-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+#text-wrapper {
+    /*need to set text-wrapper div to 100% width and height*/
+    font-family: "Lucida Sans Typewriter", "Lucida Typewriter", "monospace";
+    font-size: 1.5em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 854px;
+    height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    color: antiquewhite;
+    background: black;
+    z-index: 1001;
+    -webkit-transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+.scene-wrapper {
+    /*need to set gif-wrapper div to 100% width and height*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 854px;
+    height: 480px;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    z-index: 1003;
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+#anim {
+    /*need to set text-wrapper div to 100% width and height*/
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.show-movie {
+    opacity: 1;
+    visibility: visible;
+}
+
+.textloaded {
+    transform: translateY(-200px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.clickhere {
+    transition: 0.7s;
+}
+
+.text-wrapper-transition {
+    transform: translateY(-480px);
+    opacity: 0;
+    visibility: hidden;
+}

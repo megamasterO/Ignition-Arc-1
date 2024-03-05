@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- set a "vieport" meta tag for mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="authoring-tool" content="Adobe_Animate_CC">
+    <title>Demo</title>
+
+    <script src="
+https://cdn.jsdelivr.net/npm/createjs@1.0.1/builds/1.0.0/createjs.min.js
+"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script type="text/javascript" src="scene33.js"></script>
+
+</head>
+
+<body onload="init();">
+    <canvas id="myCanvas" width="854" height="480"></canvas>
+    <div class="gif-wrapper">
+        <div id="preloadergif"><img src="images/_preloader.gif" alt=""></div>
+        <div class="gif-hidden"></div>
+    </div>
+    <div id="text-wrapper">
+        <div class="clickhere">click to begin</div>
+        <div class="textloaded"></div>
+        <div class=".text-wrapper-transition"></div>
+    </div>
+    <!-- this is where my gifs will live -->
+    <img id="anim" src=" " alt="">
+    <!-- This was my first attempt at a movie scene wrapper -->
+    <div class="scene-wrapper">
+        <div class="show-movie"></div>
+        
+    </div>
+    <!-- <div id="_preload_div_" 
+        style="position:absolute; 
+                top:0; 
+                left:0; 
+                display: inline-block; 
+                height:480px; 
+                width: 854px; 
+                text-align: center;"
+    >	
+    <span style="display: inline-block; height: 100%; vertical-align: middle;"></span>	
+    <img src="images/_preloader.gif" style="vertical-align: middle; max-height: 100%"/>
+    </div> -->
+</body>
+
+</html>
