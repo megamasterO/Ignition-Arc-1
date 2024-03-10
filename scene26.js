@@ -580,7 +580,7 @@ function scriptReader() {
     var textBlocks = [
         [elijah,,         "From that day onward I was on house arrest...by the old man","enter1","orphange"],
         //Oh look who's back (other student)
-        [elijah,,         "If I wasn't at school I had to be home, no exceptions",],
+        [elijah,,         "If I wasn't at school or the library I had to be home, no exceptions",],
         //after school Elijah is seen entering the library from the perspective of the kids spying
         [elijah,,         "He even had the other foster kids spying on me",],
         [elijah,,         "But it didn't matter because I had other plans",],
@@ -630,7 +630,7 @@ function scriptReader() {
         [rice,,         "I talked to your teachers and they all had good things to say",],
         [rice,,         "So I'm lifting some of your restrictions. You can watch TV and play soccer with your friends",],
         //heheh perfect. That will make this next part easier
-        [elijah,"",        "^heheh perfect. Without restriction will make this next part easier^",,], 
+        [elijah,"",        "^heheh perfect. Without those restrictions it will make this next part of my plan easier^",,], 
         //(One of the orphans is a snitch?)
         [rice,,         "By the way, Suzzane and Greg, the couple looking to adopt, will be here tomorrow",,],
         [rice,,         " ","exit",],

@@ -79,9 +79,8 @@ function init() {
         { src: "images/bgLibrary.png", id: "bgLibrary" },
         { src: "images/bgJunkyard.png", id: "bgJunkyard" },
         { src: "images/bgBurgerBills.png", id: "bgBurgerBills" },
-        { src: "images/bgBedroom.png", id: "bgBedroom" },
 
-        { src: "sounds/aftersplatooncontinued.wav", id: "bgmusic" },
+        { src: "sounds/learningsynth.wav", id: "bgmusic" },
         { src: "sounds/typewritersound.mp3", id: "typewriter"},
     ];
     loader.loadManifest(manifest);
@@ -91,7 +90,7 @@ function init() {
 function handleComplete(event) {
     //once loading of assets is complete I need to run through an initiate function
     //add background to scene first
-    var startingBackground = new createjs.Bitmap(loader.getResult("bgBedroom"));
+    var startingBackground = new createjs.Bitmap(loader.getResult("bgOrphanageOutside"));
     // startingBackground.transformMatrix = new createjs.Matrix2D();
     // startingBackground.transformMatrix.appendTransform(854, 0, -1, 1, 0, 0, 0, 0, 0);
     stage.addChild(startingBackground);
@@ -281,9 +280,6 @@ function handleComplete(event) {
         },
         'bgBurgerBills': {
             default: generateCharacter("bgBurgerBills", 0, 0, 1, 1, 0, 0, 0, 0, 0),
-        },
-        'bgBedroom': {
-            default: generateCharacter("bgBedroom", 0, 0, 1, 1, 0, 0, 0, 0, 0),
         },
     })
 
@@ -578,8 +574,8 @@ function scriptReader() {
         //add dynamic text
         stage.addChild(rpgText);
         //initiate beginning characters
-        let speaker1 = screenLayers.Front_1.char;
-        enterOne(speaker1);
+        // let speaker1 = screenLayers.Front_1.char;
+        // enterOne(speaker1);
         // let speaker2 = screenLayers.Front_2.char;
         // enterTwo(speaker2);
         // let speaker3 = screenLayers.Back_1.char;
@@ -598,55 +594,111 @@ function scriptReader() {
 
     //[character,"emotion","dialogue","action","background"],
     var textBlocks = [
+        [narrator,,         "announcer: Welcome everyone to the qualifiers for Heap Island",],
+        [narrator,,         "announcer: One lucky kid get's an all-paid for trip to Metro city to participate in the amateur semi-finals",],
+        [narrator,,         "announcer: That's right! I'm talking fancy hotel, the works, and all the accommodations that come with it",],
+        [narrator,,         "announcer: We've got our contestants lined up at the starting line and an exciting track ahead of them",],
+        [narrator,,         "announcer: We'll be testing their speed, control, agility, and most of all determination",],
+        [narrator,,         "*Several picture of the track layout are shown*",],
+        [narrator,,         "announcer: Who's going to be taking that golden ticket home!!",],
+        [narrator,,         "Shadowy figure is seen in the alley way",],
+        [narrator,,         "Booster Board PR: Thanks for allowing us to host this event here",],
+        [narrator,,         "Mayor: Of course, this is good publicity. It brings in interest for the both of us",],
+        [narrator,,         "announcer: I hope you ladies and gents are ready!",],
+
+        [narrator,,         "show lineup of racers",],
+        [narrator,,         "show shadowy figure starting up engine",],
+        [narrator,,         "pan to the street lights at red",],
+        [narrator,,         "shadowy figure clipping in bindings",],
+        [narrator,,         "light changes to yellow",],
+        [narrator,,         "contestants looking at one another",],
+        [narrator,,         "shadowy figure pulls down glasses",],
+        [narrator,,         "show all engines rumbling",],
+        [narrator,,         "light switches to green",],
         
-        [narrator,"",        "Fades from flashback to present time",,"bgBedroom"],
-        // [elijah,,         "I'm stuck here",],
-        // [elijah,,         "Nothing I try makes a difference",],
-        // [elijah,,         "And no one listens to me",],
-        // [elijah,,         "What am I doing wrong??",],
-        [elijah,,         "This can't be it",],
-        [elijah,,         "I can't be stuck here",],
-        [elijah,,        "*Elijah grips key even harder causing his hand to bleed*",,],
-        [elijah,,         "I know there's something more out there",],
-        [elijah,,         "Waiting for me",],
-        [elijah,,         "There has to be...",],
-        [narrator,"",        "Memories and thoughts still cloud Elijah's mind creating a mental prison",,],
-        [narrator,"",        "-What's wrong with you??-",,],
-        [narrator,"",        "-What kind of worthless parent would leave their kid by themeselves-",,],
-        [narrator,"",        "-You're a disruption Elijah!-",,],
-        [narrator,"",        "-I'll fight back as Commander Chaos-",,],
-        [narrator,"",        "-Always know that you are special and loved-",,],
-        
-        //Elijah exhales in a growl
-        //Mentally he pushes thoughts off screen through great effort and strain
-        //and at last, he finally breaks free from all these thoughts
-        //Thoughts shatter and explode from screen
-        //replaced with a serenity. A clear mind. Peace with oneself
-        //and immediately afterward we see mind connect birth onto the screen
-        //The screen dims and we see a blue shimmer
-        //We see all of the booster board parts and equations that he has studied
-        //it is a freeze frame and we see this electric line connecting all the dots in his head
-        //Elijah is in a trance as the information swirls around him and ideas are being connected
-        //Elijah blinks and comes back to reality
-        //Elijah gasps as if he was holding his breath for a long time
-        [elijah,,         "grrrrr *Elijah exhales in a growl*",],
-        [elijah,,         "*Mentally he pushes these thoughts off screen through great effort and strain*",],
-        [elijah,,         "*and at last, he finally breaks free from all of these thoughts and negative memories*",],
-        [narrator,"",        "Thoughts shatter and explode from screen",,],
-        [narrator,"",        "replaced with a serenity. A clear mind. Peace with oneself",,],
-        [narrator,"",        "and immediately afterward we see mind connect birth onto the screen",,],
-        [narrator,"",        "The screen dims and we see a blue shimmer",,],
-        [narrator,"",        "We see all of the booster board parts and equations that he has studied",,],
-        [narrator,"",        "it is a freeze frame and we see this electric line connecting all the dots in his head",,],
-        [narrator,"",        "Elijah is in a trance as the information swirls around him and ideas are being connected",,],
-        [narrator,"",        "Elijah blinks and comes back to reality",,],
-        [elijah,"",        "*Elijah gasps as if he was holding his breath for a long time*",,],
-        [elijah,,         "That-that's it! The answer wasn't in the manual.",],
-        [elijah,,         "I gotta get back to the orphanage",],
-        [elijah,"",       "*Elijah creeps over to the door*",,],
-        [narrator,"",     "*Greg and Suzzane are discussing their plans for Elijah*",,],
-        [elijah,"",       "*Locks the door, grabs rain jacket, and climbs out the window*",,],
-        [narrator,"",        "SCENE END",,],
+        [narrator,,         "announcer: And GOOOOOOOO!",],
+        //racers start
+        [narrator,,         "crowd: WOOOOOO!",],
+        [narrator,,         "in the back of the crowd one person says huh",],
+        [narrator,,         "then it's a bunch of people",],
+        [narrator,,         "a whole commotion starts",],
+        [elijah,,         "we finally get to see Elijah struggling. Not in the air. But swerving back and forth on his board that's on wheels.","enter1"],
+        [narrator,,         "crowd: Watch out! Where did this kid come from??",],
+        [elijah,,         "Come onnnnn. Gain control",],
+        [elijah,,         "Yeah, that's it!",],
+        [elijah,,         "Time to show them",],
+        //slides to full throttle
+        //board begins to lift off the ground
+        //quick shot to show him blasting off
+        //Zoom in on person that's watching from the audience
+        //show him shocked
+        //then show Elijah's board
+        //we see a detailed shot of the board. Audience may not know but mystery figure does
+        [elijah,,         "*slides to full throttle*",],
+        [elijah,,         "*board begins to lift off the ground, then shoots off*",],
+        [elijah,,         "**",],
+        [narrator,,         "Zoom in on person that's watching from the audience",],
+        [narrator,,         "They are shocked",],
+        [narrator,,         "Close-up shot of Elijah's board",],
+
+        [narrator,,         "person: Oh no…",],
+        //we catch up to Elijah blasting into the middle of the pack
+        //knocking some kids out of the way
+        //as most of them are shocked
+        //he's taking turns, knocking into things
+        //but things seem to be going good
+        //he works his way into first place
+        [narrator,,         "we catch up to Elijah blasting into the middle of the pack",],
+        [narrator,,         "knocking some kids out of the way",],
+        [narrator,,         "as most of them are shocked",],
+        [narrator,,         "he's taking turns, knocking into things",],
+        [narrator,,         "but things seem to be going good",],
+        [narrator,,         "he works his way into first place",],
+        [narrator,,         "announcer: I don't believe it folks!! We have an unidentified mystery rider and he seems to have taken the lead!",],
+        [elijah,,         "Yes, this is so cool!!",],
+        //zooms up into the air as part of the track
+        [elijah,,         "*zooms up into the air as part of the track*",],
+        [elijah,,         "I feel like... I'm finally free",],
+        [elijah,,         "I'm finally FREE!!",],
+        [elijah,,         "This is amazing!",],
+        //we see the rest of the track from this vantage point
+        [narrator,,         "we see the rest of the track from this vantage point",],
+        [elijah,,         "Oh look, there's the finish line!",],
+        [elijah,,         "What if...maybe I can do this.",],
+        [elijah,,         "I can do this!!",],
+        [elijah,,         "*kicks the board back into full gear*",],
+        [elijah,,         "*Comes back down from the air*",],
+        [elijah,,         "*swings into the first turn. It's very close*",],
+        [elijah,,         "Whew, Looks like I'm going too fast. Time to slow down a bit",],
+        //
+        [elijah,,         "*hits brakes*",],
+        [elijah,,         "*nothing...*",],
+        [elijah,,         "*slams on brakes this time*",],
+        [elijah,,         "*nothing*",],
+        [elijah,,         "*starts pumping brakes nervously*",],
+        [elijah,,         "*fear begins to sink in*",],
+        [elijah,,         "**",],
+        [elijah,,         "Okay calm down, there's still plenty of time",],
+        //board kicks into the next gear and goes faster
+        [narrator,,         "board kicks into the next gear and goes faster",],
+        [narrator,,         "announcer: Wow this kid is still picking up the pace even though he's got a comfortable lead",],
+        [narrator,,         "announcer: He must really want this ticket",],
+        [elijah,,         "This isn't good. Judging by this distance and my speed I have about 5 seconds until I reach this turn",],
+        [elijah,,         "I was already going too fast last corner and barely made it",],
+        [elijah,,         "With the extra speed I've picked up there's no way I can make this",],
+        //the person from the crowd is yelling at him
+        //distracts Elijah
+        [narrator,,         "the person from the crowd is yelling at him which distracts him",],
+        [elijah,,         "There's no time",],
+        //tries to stop like on a snowboard but he's going too fast
+        //begins to flip and rotate
+        //we zoom out to see a smoke and debris explosion from the side of the building
+        //the screen goes black
+        [elijah,,         "*tries to stop like on a snowboard but he's going too fast*",],
+        [elijah,,         "*begins to flip and rotate*",],
+        [narrator,,         "we zoom out to see a smoke and debris explosion from the side of the building",],
+        [narrator,,         "the screen goes black",],
+        [elijah,"",        "SCENE END","exit",],
         [narrator,"",        "*Click to Restart*",,],
 
         //scene ends   
@@ -959,11 +1011,6 @@ function scriptReader() {
             let spliceIdx = 0;
             stage.removeChildAt(spliceIdx);
             stage.addChildAt(atlas.bgBurgerBills.default.bitmap, spliceIdx);
-        }
-        else if (background != undefined && background == "bgBedroom") {
-            let spliceIdx = 0;
-            stage.removeChildAt(spliceIdx);
-            stage.addChildAt(atlas.bgBedroom.default.bitmap, spliceIdx);
         }
 
         

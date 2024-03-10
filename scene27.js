@@ -653,7 +653,7 @@ function scriptReader() {
         [narrator,,         "straight on shot of Elijah beat up",,],
         [elijahHurt,,         "...I give up",],
         //slumps up against the junkyard fence and pulls out some bread
-        [narrator,,         "Elijah slumps up against the junkyard fence and pulls out some bread",,],
+        [narrator,,         "Elijah slumps up against the junkyard fence and pulls out some bread, peanutbutter, and jelly",,],
         [narrator,,         "Elijah hears panting",,],
         [narrator,,         "the dogs are behind him",,],
         [elijahHurt,,       "Oh so this is what you want, huh",],

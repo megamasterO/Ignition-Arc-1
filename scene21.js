@@ -556,6 +556,8 @@ function scriptReader() {
     var textBlocks = [
         [bret,,     "Psst. Hey!","enter2"],
         [bret,,     "You're commander chaos right?",],
+        [elijah,"",          "...",,],
+        [bret,,     "I know becasuse of the purple paint on your index finger. Your signature color",],
         [bret,,     "I've seen your tagging all over town",],
         [bret,,     "I totally respect what you're doing",],
         [bret,,     "What did they put you in here for?",],

@@ -534,17 +534,22 @@ function scriptReader() {
         [elijahKid,"",          "*kids move to another spot on the playground and start whispering so the marrow doesn't hear*","exit",],
         [brad,,         	"He's like the other kids over there"],
         [brad,,         	"I bet they had bad parents since they just left them"],
+        [elijahKid,,         	"^Just ignore them Elijah. It's not worth getting in trouble again^","enter1"],
+        [mindy,,         	"*Mindy overhears them too but shakes her and tries her best to ignore them*","enter2"],
         //ignore them Elijah
         //Mindy overhears too but shakes her head and ignores them
         [cody,,         	"Well my Mom said that people like that did bad things like having kids out of wedding locks"],
         [brad,,         	"What are wedding locks?"],
         [cody,,         	"I dunno but I think it's bad"],
-        [brad,,         	"It must be. What kind of worthless parent would leave their kid..."],
+        [brad,,         	"It must be. What kind of thoughtless parents would leave their kid..."],
+        [mindy,,         	"*Mindy turns around to say something*",],
         //Mindy turns around to say something
         //Elijah looms over classmates
-        [elijahKid,,         	"Hey, don't say something like that. Take it back!","enter1"],
+        [elijahKid,,         	"*Elijah looms over classmates*",],
+        [elijahKid,,         	"Hey take that back!",],
         [brad,,         	"Ahh it's Elijah!"],
-        [cody,,         	"What are you getting mad about"],
+        [mindy,,         	" ","exit"],
+        [cody,,         	"What are you getting mad about? Your parents aren't even around!"],
         //Elijah jumps on top of kid 1
         [elijahKid,,         	"*Elijah jumps other student*"],
         [elijahKid,,         	"I said take it BACK!!"],
