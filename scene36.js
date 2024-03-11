@@ -79,6 +79,7 @@ function init() {
         { src: "images/bgLibrary.png", id: "bgLibrary" },
         { src: "images/bgJunkyard.png", id: "bgJunkyard" },
         { src: "images/bgBurgerBills.png", id: "bgBurgerBills" },
+        { src: "images/bgRaceStart.png", id: "bgRaceStart" },
 
         { src: "sounds/learningsynth.wav", id: "bgmusic" },
         { src: "sounds/typewritersound.mp3", id: "typewriter"},
@@ -90,7 +91,7 @@ function init() {
 function handleComplete(event) {
     //once loading of assets is complete I need to run through an initiate function
     //add background to scene first
-    var startingBackground = new createjs.Bitmap(loader.getResult("bgOrphanageOutside"));
+    var startingBackground = new createjs.Bitmap(loader.getResult("bgRaceStart"));
     // startingBackground.transformMatrix = new createjs.Matrix2D();
     // startingBackground.transformMatrix.appendTransform(854, 0, -1, 1, 0, 0, 0, 0, 0);
     stage.addChild(startingBackground);
@@ -280,6 +281,9 @@ function handleComplete(event) {
         },
         'bgBurgerBills': {
             default: generateCharacter("bgBurgerBills", 0, 0, 1, 1, 0, 0, 0, 0, 0),
+        },
+        'bgRaceStart': {
+            default: generateCharacter("bgRaceStart", 0, 0, 1, 1, 0, 0, 0, 0, 0),
         },
     })
 
@@ -1011,6 +1015,11 @@ function scriptReader() {
             let spliceIdx = 0;
             stage.removeChildAt(spliceIdx);
             stage.addChildAt(atlas.bgBurgerBills.default.bitmap, spliceIdx);
+        }
+        else if (background != undefined && background == "bgRaceStart") {
+            let spliceIdx = 0;
+            stage.removeChildAt(spliceIdx);
+            stage.addChildAt(atlas.bgRaceStart.default.bitmap, spliceIdx);
         }
 
         
