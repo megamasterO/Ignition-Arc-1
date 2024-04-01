@@ -388,7 +388,7 @@ function scriptReader() {
     //[character,"emotion","dialogue","action","background"],
     var textBlocks = [
         [elijah,"",            "*sigh* (...another day...)","enter1","bg0"],
-        [elijah,"",            "(...school is a glorified prison...)","enter1","bg0"],
+        [elijah,"",            "(...school is a glorified prison...)",,],
         [elijah,"",            "(...you don't choose what you eat...)",,"bg1"],
         [elijah,"",            "(...you only get limited time outside...)",,"bg2"],
         [elijah,"",            "(...And if you don't follow the rules...",,"bg3"],
