@@ -25,7 +25,7 @@ function init() {
     //manually creating the manifest for now to make sure it works
     let manifest = [
         { src: "images/scene3_atlas_1.png", id: "scene3_atlas_1" },
-        { src: "images/School_Intro_0000.jpg", id: "bg0" },
+        { src: "images/School_Intro_0010.jpg", id: "bg0" },
         { src: "images/School_Intro_0001.jpg", id: "bg1" },
         { src: "images/School_Intro_0002.jpg", id: "bg2" },
         { src: "images/School_Intro_0003.jpg", id: "bg3" },
